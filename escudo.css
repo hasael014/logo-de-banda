@@ -33,7 +33,7 @@
     justify-items: center;
     align-items: center;
     filter:
-      drop-shadow( 0 -5px 0px rgb(255, 255, 255))
+      drop-shadow( 0 -5px 10px rgb(255, 255, 255))
       drop-shadow(0 1px 0 black)
       drop-shadow(-3px 0 0 black)
       drop-shadow(3px 0 0 black);

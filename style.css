@@ -3,7 +3,9 @@
     padding: 0;
 }
 body>div.continer{
-    background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
+    /*background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
+    */
+    background: url(/fondo-de-logo.jpg) center / cover;
     width: 800px;
     height: 800px;
     border-radius: 50%;

@@ -20,22 +20,15 @@
     width: var(--ancho-del-escudo);
     height: var(--alto-del-escudo);
     background: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .contenedor-alas-left{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
 }
 .contenedor-alas-left>div{
     background-image: linear-gradient(white, grey, grey);
     width: var(--ancho-alas);
     height: var(--alto-alas);
     clip-path: polygon(var(--dibujo-alas));
-    float: right;
     transform: rotate(20deg);
 }
 
