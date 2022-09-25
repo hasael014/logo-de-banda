@@ -35,12 +35,19 @@
     100% 10%,
     100% 100%,
     55% 100%;
+    --color-alas: linear-gradient(white, grey, grey);
 }
 
 *{
     margin: 0;
     padding: 0;
 }
+
+body{
+    min-width: 1000px;
+    min-height: 1000px;
+}
+
 body>div.continer{
     /*background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
     */
@@ -57,14 +64,23 @@ body>div.continer{
     /*border: solid red 5px;*/
     position: relative;
     margin: 20px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
     filter:
       drop-shadow( 0 -5px 10px rgb(255, 255, 255))
       drop-shadow(0 1px 0 black)
       drop-shadow(-3px 0 0 black)
       drop-shadow(3px 0 0 black);
+}
+
+.ala1{
+    clip-path: polygon(var(--dibujo-alas));
+    background-image: var(--color-alas);
+    width: var(--ancho-alas);
+    height: var(--alto-alas);
+    position: absolute;
+    left: 50px;
+    top: 35%;
+    transform: rotate(15deg);
+
 }
 
 .escudo {

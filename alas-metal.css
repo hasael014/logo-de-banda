@@ -14,7 +14,7 @@
 .contenedor-alas-left{
 }
 .contenedor-alas-left>div{
-    background-image: linear-gradient(white, grey, grey);
+    
     width: var(--ancho-alas);
     height: var(--alto-alas);
     clip-path: polygon(var(--dibujo-alas));
