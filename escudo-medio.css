@@ -1,0 +1,16 @@
+@import "/escudo.css";
+.contenedor-mini{
+    filter:
+      drop-shadow( 0 -5px 2px black)
+      drop-shadow(0 5px 2px white)
+      drop-shadow(-2px 0 0px black)
+      drop-shadow(2px 0 0px black);
+}
+
+.escudo-mini{
+    clip-path: var(--dibujo-de-escudo);
+    width: calc(var(--ancho-del-escudo)* 0.43);
+    height: calc(var(--alto-del-escudo)* 0.43);
+    background: url(/Fondo\ de\ textura\ de\ rejilla\ de\ altavoz\ acústico\ _\ Vector\ Premium.jpg) center / cover;
+    display: grid;
+}

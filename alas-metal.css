@@ -1,0 +1,46 @@
+@import url("/escudo.css");
+@import url("/escudo-medio.css");
+
+:root{
+    --ancho-alas: 250px;
+    --alto-alas: 50px;
+    --dibujo-alas: 49% 98%,
+    45% 95%,
+    40% 91%,
+    32% 80%,
+    18% 50%,    
+    0 0,
+    50% 10%,
+    100% 10%,
+    100% 100%,
+    55% 100%;
+}
+
+.contenedor-de-alas{
+    width: var(--ancho-del-escudo);
+    height: var(--alto-del-escudo);
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-alas-left{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.contenedor-alas-left>div{
+    background-image: linear-gradient(white, grey, grey);
+    width: var(--ancho-alas);
+    height: var(--alto-alas);
+    clip-path: polygon(var(--dibujo-alas));
+    float: right;
+    transform: rotate(20deg);
+}
+
+.ala1{
+    top: 50px;
+    right: 50%;
+    transform: rotateZ(20deg);
+}
