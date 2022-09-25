@@ -44,7 +44,7 @@
 body>div.continer{
     /*background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
     */
-    background: url("/fondo-de-logo.jpg") center / cover;
+    background: url("fondo-de-logo.jpg") center / cover;
     width: 800px;
     height: 800px;
     border-radius: 50%;
@@ -89,6 +89,6 @@ body>div.continer{
     clip-path: var(--dibujo-de-escudo);
     width: calc(var(--ancho-del-escudo)* 0.43);
     height: calc(var(--alto-del-escudo)* 0.43);
-    background: url("/fondo-de-logo.jpg") center / cover;
+    background: url("fondo-de-logo.jpg") center / cover;
     display: grid;
 }
