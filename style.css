@@ -1,3 +1,42 @@
+:root{
+    --ancho-del-escudo: 700px;
+    --alto-del-escudo: 750px;
+    --dibujo-de-escudo: polygon(        
+        20% 75%,
+        15.5% 70%,
+        12% 65%,
+        7% 55%, 
+        5% 50%,
+        0 10%,
+        12.5% 9%,
+        25% 7%,
+        37.5% 4.5%,
+        49% 2%,
+        51% 2%,
+        62.5% 4.5%,
+        75% 7%, 
+        87.5% 9%,
+        100% 10%,
+        95% 50%,
+        93% 55%,
+        88% 65%,
+        80% 75%,
+        50% 100%
+        );
+    --ancho-alas: 250px;
+    --alto-alas: 50px;
+    --dibujo-alas: 49% 98%,
+    45% 95%,
+    40% 91%,
+    32% 80%,
+    18% 50%,    
+    0 0,
+    50% 10%,
+    100% 10%,
+    100% 100%,
+    55% 100%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,4 +51,44 @@ body>div.continer{
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+.contenedor {
+    /*border: solid red 5px;*/
+    position: relative;
+    margin: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    filter:
+      drop-shadow( 0 -5px 10px rgb(255, 255, 255))
+      drop-shadow(0 1px 0 black)
+      drop-shadow(-3px 0 0 black)
+      drop-shadow(3px 0 0 black);
+}
+
+.escudo {
+    background-image:repeating-linear-gradient(to right, goldenrod 0% 0%,white 65% 0%,goldenrod 99% 20%);
+    clip-path: var(--dibujo-de-escudo);
+    width: calc(var(--ancho-del-escudo)/2);
+    height: calc(var(--alto-del-escudo) / 2);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-mini{
+    filter:
+      drop-shadow( 0 -5px 2px black)
+      drop-shadow(0 5px 2px white)
+      drop-shadow(-2px 0 0px black)
+      drop-shadow(2px 0 0px black);
+}
+
+.escudo-mini{
+    clip-path: var(--dibujo-de-escudo);
+    width: calc(var(--ancho-del-escudo)* 0.43);
+    height: calc(var(--alto-del-escudo)* 0.43);
+    background: url(/fondo-de-logo.jpg) center / cover;
+    display: grid;
 }

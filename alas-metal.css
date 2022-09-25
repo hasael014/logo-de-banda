@@ -2,18 +2,7 @@
 @import url("/escudo-medio.css");
 
 :root{
-    --ancho-alas: 250px;
-    --alto-alas: 50px;
-    --dibujo-alas: 49% 98%,
-    45% 95%,
-    40% 91%,
-    32% 80%,
-    18% 50%,    
-    0 0,
-    50% 10%,
-    100% 10%,
-    100% 100%,
-    55% 100%;
+    
 }
 
 .contenedor-de-alas{
