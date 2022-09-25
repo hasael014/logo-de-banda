@@ -11,6 +11,6 @@
     clip-path: var(--dibujo-de-escudo);
     width: calc(var(--ancho-del-escudo)* 0.43);
     height: calc(var(--alto-del-escudo)* 0.43);
-    background: url(/Fondo\ de\ textura\ de\ rejilla\ de\ altavoz\ acústico\ _\ Vector\ Premium.jpg) center / cover;
+    background: url(/fondo-de-logo.jpg) center / cover;
     display: grid;
 }
