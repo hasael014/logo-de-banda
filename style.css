@@ -1,4 +1,6 @@
 :root{
+    --ancho-de-pagina: 800px;
+    --alto-de-pagina: 800px;
     --ancho-del-escudo: 700px;
     --alto-del-escudo: 750px;
     --dibujo-de-escudo: polygon(        
@@ -23,8 +25,8 @@
         80% 75%,
         50% 100%
         );
-    --ancho-alas: 250px;
-    --alto-alas: 50px;
+    --ancho-alas: 300px;
+    --alto-alas: 90px;
     --dibujo-alas: 49% 98%,
     45% 95%,
     40% 91%,
@@ -36,6 +38,16 @@
     100% 100%,
     55% 100%;
     --color-alas: linear-gradient(white, grey, grey);
+    --dibujo-alas-rigth: 
+    0% 10%,
+    50% 10%,
+    100% 0%,
+    82% 50%,
+    68% 80%,
+    60% 91%,
+    55% 95%,
+    0% 100%
+    ;
 }
 
 *{
@@ -44,25 +56,87 @@
 }
 
 body{
-    min-width: 1000px;
-    min-height: 1000px;
+    min-width: var(--ancho-de-pagina);
+    min-height: var(--alto-de-pagina);
 }
 
-body>div.continer{
+div.continer{
     /*background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
     */
-    background: url(fondo-de-logo.jpg) center / cover;
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
+    background: url(fondo-de-logo.jpg);
+    width: var(--ancho-de-pagina);
+    height: var(--alto-de-pagina);
+    border-radius: 50%;/*
+    display: grid;
+    align-items: center;
+    justify-items: center;*/
+    position: absolute;
+}
+
+.contenedor-de-escudo-y-alas{
+    width: 65%;
+    height: 100%;
     display: grid;
     align-items: center;
     justify-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.alas-left{
+    clip-path: polygon(var(--dibujo-alas));
+    background-image: var(--color-alas);
+    width: var(--ancho-alas);
+    height: var(--alto-alas);
+    position: absolute;
+}
+
+.ala1{
+    left: -10%;
+    top: 35%;
+    transform: rotate(38deg);
+}
+
+.ala2{
+    left: -8%;
+    top: 45%;
+    transform: rotate(34deg);
+}
+
+.ala3{
+    left: -4%;
+    top: 51%;
+    transform: rotate(24deg)
+}
+
+.alas-rigth{
+    clip-path: polygon(var(--dibujo-alas-rigth));
+    background-image: var(--color-alas);
+    width: var(--ancho-alas);
+    height: var(--alto-alas);
+    position: absolute;
+}
+
+.ala4{
+    top: 35%;
+    left: 52%;
+    transform: rotate(-38deg);
+}
+
+.ala5{
+    top: 45%;
+    left: 49%;
+    transform: rotate(-34deg);
+}
+
+.ala6{
+    top: 51%;
+    left: 45%;
+    transform: rotate(-24deg);
 }
 
 .contenedor {
     /*border: solid red 5px;*/
-    position: relative;
     margin: 20px;
     filter:
       drop-shadow( 0 -5px 10px rgb(255, 255, 255))
@@ -71,23 +145,11 @@ body>div.continer{
       drop-shadow(3px 0 0 black);
 }
 
-.ala1{
-    clip-path: polygon(var(--dibujo-alas));
-    background-image: var(--color-alas);
-    width: var(--ancho-alas);
-    height: var(--alto-alas);
-    position: absolute;
-    left: 50px;
-    top: 35%;
-    transform: rotate(15deg);
-
-}
-
 .escudo {
     background-image:repeating-linear-gradient(to right, goldenrod 0% 0%,white 65% 0%,goldenrod 99% 20%);
     clip-path: var(--dibujo-de-escudo);
-    width: calc(var(--ancho-del-escudo)/2);
-    height: calc(var(--alto-del-escudo) / 2);
+    width: calc(var(--ancho-de-pagina)/2);
+    height: calc(var(--alto-de-pagina) / 2);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -95,7 +157,7 @@ body>div.continer{
 
 .contenedor-mini{
     filter:
-      drop-shadow( 0 -5px 2px black)
+      drop-shadow( 0 -3px 1px black)
       drop-shadow(0 5px 2px white)
       drop-shadow(-2px 0 0px black)
       drop-shadow(2px 0 0px black);
@@ -103,8 +165,10 @@ body>div.continer{
 
 .escudo-mini{
     clip-path: var(--dibujo-de-escudo);
-    width: calc(var(--ancho-del-escudo)* 0.43);
-    height: calc(var(--alto-del-escudo)* 0.43);
+    width: calc(var(--ancho-de-pagina)* 0.43);
+    height: calc(var(--alto-de-pagina)* 0.43);
     background: url(fondo-de-logo.jpg) center / cover;
     display: grid;
+    justify-items: center;
+    align-items: center;
 }
