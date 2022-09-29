@@ -127,9 +127,9 @@ img.ala-de-angel-2{
 }
 
 .escudo {
-    background-image:repeating-linear-gradient(to right, goldenrod 0% 0%,white 65% 0%,goldenrod 99% 20%);
+    /*background-image:repeating-linear-gradient(to right, goldenrod 0% 0%,white 65% 0%,goldenrod 99% 20%);
     
-    /*background: url(texture-oro-04.jpeg);*/
+    */background: url(texture-oro-04.jpeg);
     clip-path: var(--dibujo-de-escudo);
     width: calc(var(--ancho-de-pagina)/2);
     height: calc(var(--alto-de-pagina) / 2);
@@ -154,19 +154,6 @@ img.ala-de-angel-2{
     align-items: center;
 }
 
-.flecha {
-    width: calc(var(--ancho-de-pagina)* 0.25);
-    height: calc(var(--alto-de-pagina)*0.25);
-    background: var(--color-flecha);
-    clip-path: polygon(0% 85%,
-            85% 10%,
-            76% 10%,
-            100% 0%,
-            92% 25%,
-            92% 15%,
-            5% 90%);
-}
-
 @font-face {
     font-family: "laenc";
     src: url(/fonts/Yellowtail/Yellowtail-Regular.ttf);
@@ -184,12 +171,10 @@ img.ala-de-angel-2{
 }
 
 .la-encantadora {
-    font-family: "laenc";
     font-weight: 100;
     font-size: 200%;
     position: absolute;
     top: 0%;
-    color: white;
 }
 
 @font-face {
@@ -211,8 +196,8 @@ img.ala-de-angel-2{
     color: black;/*
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;*/
-    top: 41%;
-    left: -12%;
+    top: 42.5%;
+    left: 19%;
     filter: 
     drop-shadow(-1px 0px 0px white)
     drop-shadow(0px -1px 0px white)
@@ -233,8 +218,8 @@ img.ala-de-angel-2{
 
 .f,.l,.e,.c,.h,.a,.z,.o{
     color: rgb(0, 0, 0);/*
-    font-family: "flechazo";*/
-    text-transform: uppercase;
+    font-family: "flechazo";
+    text-transform: uppercase;*/
     filter: 
     drop-shadow(-2px 0px 0px white)
     drop-shadow(0px -2px 0px white)
@@ -243,13 +228,13 @@ img.ala-de-angel-2{
     drop-shadow(0px -1px 0px black)
     drop-shadow(0px 1px 0px black);
     font-size: 4em;
-    font-weight: 100;
-    transform-origin: 0% 0%;
+    font-weight: 100;/*
+    transform-origin: 0% 0%;*/
 }
 
 
-.f, .o {
-    transform-origin: 100% 0%;
+.f, .o {/*
+    transform-origin: 100% 0%;*/
     transform: scale(1.5);
     text-shadow: 0px 0px 2px black;
     font-size: 6em;
@@ -257,7 +242,7 @@ img.ala-de-angel-2{
 
 .numero-de-telefono{
     position:absolute;
-    width: 55%;
+    width: 27%;
     height: 5%;
     top: 74%;/*
     left: 20%;*/
@@ -270,7 +255,7 @@ img.ala-de-angel-2{
 
 .numero-de-telefono>img{
     width: 100%;
-    height: 100%;
+    height: 95%;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
@@ -310,18 +295,18 @@ img.ala-de-angel-2{
 }
 .C{
     top: -20%;
-    left: -12%;
-    transform: rotate(59deg);
+    left: 20%;
+    transform: rotate(60deg);
 }
 
 .U{
-    top :-10%;
-    left: -10%;
-    transform: rotate(56deg);
+    top :-17.8%;
+    left: 21.2%;
+    transform: rotate(59deg);
 }
 
 .A{
-    top :-16.5%;
-    left: -8.2%;
-    transform: rotate(56deg);
+    top :-16%;
+    left: 22.1%;
+    transform: rotate(59deg);
 }
