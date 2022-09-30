@@ -291,17 +291,17 @@ img.ala-de-angel-2{
 .cuaxocotitla>span{
     position: absolute;
     font-size: 2.82em;
-    color: black;/*
+    color: white;
     filter: 
     drop-shadow(-1px 0px 0px black)
     drop-shadow(0px -1px 0px black)
     drop-shadow(0px 1px 0px black)
     drop-shadow(1px 0px 0px black)
     drop-shadow(0px 1px 0px grey)
-    drop-shadow(1px 0px 0px grey);*/
-    font-weight: 100;
+    drop-shadow(1px 0px 0px grey);
+    font-weight: 100;/*
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid red;*/
 }
 .C{
     top: 88%;
@@ -310,131 +310,131 @@ img.ala-de-angel-2{
 }
 
 .U{
-    top: 89.38%;
+    top: 89.24%;
     left: 19.85%;
     transform: rotate(25.5deg);
 }
 
 .A{
-    top: 90.33%;
+    top: 90.1%;
     left: 23%;
     transform: rotate(23deg);
 }
 
 .X{
-    top: 91.22%;
+    top: 90.9%;
     left: 26%;
     transform: rotate(19.75deg);
 }
 
 .O{
-    top: 92%;
+    top: 91.61%;
     left: 29.35%;
     transform: rotate(17deg);
 }
 
 .OC{
-    top: 92.63%;
+    top: 92.2%;
     left: 32.74%;
     transform: rotate(14deg);
 }
 
 .CO{
-    top: 93.13%;
+    top: 92.65%;
     left: 35.77%;
     transform: rotate(11deg);
 }
 
 .T{
-    top: 93.5%;
+    top: 92.97%;
     left: 39.23%;
     transform: rotate(9deg);
 }
 
 .I{
-    top: 93.71%;
+    top: 93.17%;
     left: 41.28%;
     transform: rotate(7deg);
 }
 
 .IT{
-    top: 93.84%;
+    top: 93.32%;
     left: 43.4%;
     transform: rotate(5deg);
 }
 
 .L{
-    top: 93.95%;
+    top: 93.41%;
     left: 45.5%;
     transform: rotate(3deg);
 }
 
 .LA{
-    top: 94%;
+    top: 93.45%;
     left: 47.5%;
 }
 
 .H{
-    top: 4.15%;
+    top: 93.22%;
     left: 53%;
     transform: rotate(-5deg);
 }
 
 .HU{
-    top: 3.8%;
-    left: 58%;
+    top: 92.87%;
+    left: 58.4%;
     transform: rotate(-8.5deg);
 }
 
 .E{
-    top: 3.4%;
-    left: 61.5%;
+    top: 92.49%;
+    left: 62%;
     transform: rotate(-11.5deg);
 }
 
 .J{
-    top: 3%;
-    left: 64.7%;
+    top: 92.11%;
+    left: 65.3%;
     transform: rotate(-13deg);
 }
 
 .JU{
-    top: 2.45%;
-    left: 66.7%;
+    top: 91.6%;
+    left: 67.5%;
     transform: rotate(-16.5deg);
 }
 
 .UT{
-    top: 1.83%;
-    left: 70.25%;
+    top: 91%;
+    left: 71.2%;
     transform: rotate(-18.8deg);
 }
 
 .TL{
-    top: 1.3%;
-    left: 72.25%;
+    top: 90.51%;
+    left: 73.3%;
     transform: rotate(-21deg);
 }
 
 .TLA{
-    top: 0.65%;
-    left: 74%;
+    top: 89.81%;
+    left: 75.39%;
     transform: rotate(-22.5deg);
 }
 
 .HG{
-    top: -1.39%;
-    left: 79%;
+    top: 87.5%;
+    left: 81%;
     transform: rotate(-28.5deg);
 }
 .G{
-    top: -2.95%;
-    left: 83.5%;
+    top: 86%;
+    left: 85.8%;
     transform: rotate(-32deg);
 }
 
 .GO{
-    top: -4.4%;
-    left: 86.5%;
+    top: 84.62%;
+    left: 89%;
     transform: rotate(-35deg);
 }
