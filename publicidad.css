@@ -87,7 +87,6 @@ div.continer {
     */
     width: var(--ancho-de-pagina);
     height: var(--alto-de-pagina);
-    border-radius: 0%;
     /*
     display: flex;
     align-items: center;
@@ -99,16 +98,19 @@ div.continer {
     drop-shadow(1px 0px 0px white)
     drop-shadow(0px 1px 0px white)
     drop-shadow(0px -1px 0px white);*/
+    background: url(background-02.jpeg) center;
 }
 
 .contenedor-de-circulo {
-    position: absolute;
-    background: url(background-02.jpeg) center;
+    position: absolute;/*
+    width: var(--ancho-de-pagina);
+    height: var(--alto-de-pagina);*/
+    /*filter:
+        drop-shadow(-1px 0px 0px white) drop-shadow(1px 0px 0px white) drop-shadow(0px 1px 0px white) drop-shadow(0px -1px 0px white);
+*/
     width: var(--ancho-de-pagina);
     height: var(--alto-de-pagina);
-    border-radius: 50%;
-    filter:
-        drop-shadow(-1px 0px 0px white) drop-shadow(1px 0px 0px white) drop-shadow(0px 1px 0px white) drop-shadow(0px -1px 0px white);
+    top: -10%;
 }
 
 .contenedor-de-cupis {
@@ -432,7 +434,7 @@ img.ala-de-angel-2 {
 
 .numero-de-telefono {
     position: absolute;
-    width: 49%;
+    width: 53%;
     height: 5%;
     top: 76%;
     /*
@@ -444,7 +446,7 @@ img.ala-de-angel-2 {
     grid-template-rows: 1fr 1fr;
     filter:
         drop-shadow(-1px 0px black) drop-shadow(0px -1px black) drop-shadow(-1px 0px white) drop-shadow(0px -1px white);
-        align-items: center;
+    align-items: center;
 }
 
 .numero-de-telefono>img {
@@ -455,26 +457,27 @@ img.ala-de-angel-2 {
 }
 
 .number-tel-1 {
-    font-size: 2em;
+    font-size: 2.5em;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .number-tel-2 {
-    font-size: 2em;
+    font-size: 2.5em;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
 .contenedor-de-localidad {
-    height: 100%;
+    height: auto;
     width: 100%;
     position: absolute;
     color: white;
-    top: 0%;
+    top: 85%;
+    left: 13%;
 }
 
-.cuaxocotitla>span {
+.cuaxocotitla{
     position: absolute;
     font-size: 2.82em;
     color: white;
@@ -485,7 +488,7 @@ img.ala-de-angel-2 {
     background-color: white;
     border: 1px solid red;*/
 }
-
+/*
 .C {
     top: 88%;
     left: 15.59%;
@@ -621,4 +624,18 @@ img.ala-de-angel-2 {
     top: 84.62%;
     left: 89%;
     transform: rotate(-35deg);
+}*/
+
+.adds{
+    color: white;
+    width: 70%;
+    top: 83%;
+    left: 20.5%;
+    font-size: 3rem;
+    position: absolute;
+    text-shadow: 5px 5px 5px black,
+        -5px -5px 5px black,
+        -5px 5px 5px black,
+        5px -5px 5px black;
+    font-weight: 900;
 }

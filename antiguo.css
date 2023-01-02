@@ -55,36 +55,14 @@
 
 body {
     min-width: var(--ancho-de-pagina);
-    min-height: var(--alto-de-pagina);
-    /*
+    min-height: var(--alto-de-pagina);/*
     background: rgb(52, 51, 48);*/
-}
-
-.nota-musical{
-    position: absolute;
-    width: 30%;
-    top: 56%;
-    left: 0%;
-    filter: none;
-}
-
-.note-rigth{
-    left: 60%;
-    transform: rotateZ(30deg) rotateY(180deg);
-}
-
-.note-left{
-    left: 10%;
-    transform: rotate(330deg);
-}
-
-.nota-musical>img{
-    width: 80%;
 }
 
 div.continer {
     /*background-image: radial-gradient(ellipse 650px 250px at 50% -15%, rgb(255, 255, 255), rgba(252, 139, 2, 0.696), rgba(252, 139, 2, 0.77), rgba(0, 0, 0, 1)) ;
     */
+    background: url(background-01.jpeg) center;
     width: var(--ancho-de-pagina);
     height: var(--alto-de-pagina);
     border-radius: 0%;
@@ -92,8 +70,7 @@ div.continer {
     display: flex;
     align-items: center;
     justify-items: center;*/
-    position: absolute;
-    /*
+    position: absolute;/*
     filter: 
     drop-shadow(-1px 0px 0px white)
     drop-shadow(1px 0px 0px white)
@@ -101,28 +78,29 @@ div.continer {
     drop-shadow(0px -1px 0px white);*/
 }
 
-.contenedor-de-circulo {
-    position: absolute;
-    background: url(background-02.jpeg) center;
+.contenedor-de-circulo{
+position: absolute;
+background: url(background-01.jpeg) center;
     width: var(--ancho-de-pagina);
     height: var(--alto-de-pagina);
     border-radius: 50%;
-    filter:
-        drop-shadow(-1px 0px 0px white) drop-shadow(1px 0px 0px white) drop-shadow(0px 1px 0px white) drop-shadow(0px -1px 0px white);
 }
 
-.contenedor-de-cupis {
+.contenedor-de-cupis{
     z-index: 200;
     width: 23%;
     position: absolute;
-    top: 28%;
+    top: 35%;
     left: 55%;
     transform: rotate(-25deg);
 }
 
-img {
+img{
     width: 100%;
-    filter: drop-shadow(0px 2px 0px white) drop-shadow(0px -2px 0px white) drop-shadow(2px 0px 0px white) drop-shadow(-2px 0px 0px white) grayscale(0%);
+    filter: drop-shadow(0px 2px 0px white)
+    drop-shadow(0px -2px 0px white)
+    drop-shadow(2px 0px 0px white)
+    drop-shadow(-2px 0px 0px white);
 }
 
 .contenedor-de-escudo-y-alas {
@@ -135,7 +113,7 @@ img {
     position: relative;
 }
 
-.contenedor-de-escudo-y-alas>img {
+.contenedor-de-escudo-y-alas>img{
     clip-path: polygon(0% 0%, 50% 0%, 50% 78%, 0% 80%);
     width: 100%;
     position: absolute;
@@ -144,7 +122,7 @@ img {
     top: 15%;
 }
 
-img.ala-de-angel-2 {
+img.ala-de-angel-2{
     clip-path: polygon(50% 0%, 100% 0%, 100% 78%, 50% 80%);
     width: 100%;
     position: absolute;
@@ -163,8 +141,7 @@ img.ala-de-angel-2 {
 .escudo {
     /*background-image:repeating-linear-gradient(to right, goldenrod 0% 0%,white 65% 0%,goldenrod 99% 20%);
     
-    */
-    background: url(texture-oro-04.jpeg);
+    */background: url(texture-oro-04.jpeg);
     clip-path: var(--dibujo-de-escudo);
     width: calc(var(--ancho-de-pagina)/2);
     height: calc(var(--alto-de-pagina) / 2);
@@ -219,22 +196,19 @@ img.ala-de-angel-2 {
 
 @font-face {
     font-family: "banda";
-    src: url(/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+    src: url(/fonts/Josefin_Sans/static/JosefinSans-LightItalic.ttf);
 }
 
 .banda {
     /*background: linear-gradient(180deg, grey,black,  white,black);
-    *
-    background: url(/texture-oro-09.jpeg) center /cover;
-    /*font-family: "flechazo";*/
+    font-family: "flechazo";*/
     font-weight: 900;
     font-size: 2.85em;
-    /*
-    color: black;
+    color: black;/*
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;*/
-    top: -27%;
-    left: -1.85%;
+    top: 42.5%;
+    left: -10%;
     filter: /*
     drop-shadow(-1px 0px 0px white)*/
     drop-shadow(0px -1px 0px white)
@@ -242,383 +216,232 @@ img.ala-de-angel-2 {
     drop-shadow(1px 0px 0px black)
     drop-shadow(0px -1px 1px black)
     drop-shadow(0px 1px 0px black);
-    position: relative;
-    height: 10%;
-    width: 75%;
-    transform: rotate(-0.5deg);
-}
-
-.banda>span {/*
-    background: url(/texture-oro-09.jpeg) center /cover;*/
-    background: linear-gradient(gold,white,white,gold,gold,gold);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;/*
-    border: 1px solid red;*/
     position: absolute;
 }
 
-.ll{
-    top: 27%;
-    left: 1.49%;
-    transform: rotate(-13.5deg);
-}
 
-.aa{
-    top: 20.5%;
-    left: 7.95%;
-    transform: rotate(-12deg);
-}
-
-.ee{
-    top: 11.4%;
-    left: 18.41%;
-    transform: rotate(-9deg);
-}
-
-.nn{
-    top: 7.9%;
-    left: 22.87%;
-    transform: rotate(-7.5deg);
-}
-
-.cc {
-    top: 5%;
-    left: 28.4%;
-    transform: rotate(-6deg);
-}
-
-.aaa {
-    top: 2.8%;
-    left: 32.91%;
-    transform: rotate(-4.5deg);
-}
-
-.nnn {
-    top: 1.1%;
-    left: 37.94%;
-    transform: rotate(-3deg);
-}
-
-.tt {
-    top: 0.2%;
-    left: 43.5%;
-    transform: rotate(-1.5deg);
-}
-
-.aaaa {
-    top: 0%;
-    left: 47%;
-}
-
-.dd{
-    top: 0.3%;
-    left: 52.07%;
-    transform: rotate(1.5deg);
-}
-
-.oo{
-    top: 1.38%;
-    left: 57.6%;
-    transform: rotate(3deg);
-}
-
-.rr{
-    top: 2.8%;
-    left: 62.6%;
-    transform: rotate(4.5deg);
-}
-
-.aaaaa{
-    top: 4.9%;
-    left: 67.05%;
-    transform: rotate(6deg);
-}
-
-.bb{
-    top: 11.75%;
-    left: 77.6%;
-    transform: rotate(9deg);
-}
-
-.aaaaaa{
-    top: 16.2%;
-    left: 83.1%;
-    transform: rotate(10.5deg);
-}
-
-.nnnn{
-    top: 21.2%;
-    left: 88.05%;
-    transform: rotate(12deg);
-}
-
-.ddd {
-    top: 27.2%;
-    left: 93.45%;
-    transform: rotate(13.5deg);
-}
-
-.aaaaaaa{
-    top: 33.3%;
-    left: 98.82%;
-    transform: rotate(15deg);
-}
-
-
-.flechazo {
+.flechazo{
     width: 110%;
     height: 100px;
     text-align: center;
     font-size: 1.75em;
-    position: absolute;
-    top: 38.3%;;
 }
 
-.f,
-.l,
-.e,
-.c,
-.h,
-.a,
-.z,
-.o {
-    /*
+.f,.l,.e,.c,.h,.a,.z,.o{/*
     color: rgb(0, 0, 0);
     font-family: "flechazo";
     text-transform: uppercase;*/
-    filter:
-        drop-shadow(-3px 0px 0px white) 
-        drop-shadow(0px -3px 0px white) 
-        drop-shadow(-1px 0px 0px black) 
-        drop-shadow(1px 0px 0px black) 
-        drop-shadow(0px -1px 0px black) 
-        drop-shadow(0px 1px 0px black);
+    filter: 
+    drop-shadow(-2px 0px 0px white)
+    drop-shadow(0px -2px 0px white)
+    drop-shadow(-1px 0px 0px black)
+    drop-shadow(1px 0px 0px black)
+    drop-shadow(0px -1px 0px black)
+    drop-shadow(0px 1px 0px black);
     font-size: 4em;
-    font-weight: 100;
-    background: #291f0c;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-weight: 100;/*
+    transform-origin: 0% 0%;*/
 }
 
 
-.f,
-.o {
-    /*
+.f, .o {/*
     transform-origin: 100% 0%;*/
-    transform: scale(1.5);/*
-    text-shadow: 0px 0px 2px black;*/
+    transform: scale(1.5);
+    text-shadow: 0px 0px 2px black;
     font-size: 6em;
 }
 
-.Huapanguero{
-    position: absolute;
-    z-index: 200;
-    top: 55%;
-    font-size: 4em;
-    font-weight: 600;/*
-    background: url(texture-oro-05.jpeg) center / cover;*/
-    background: #34230e;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    filter:
-    drop-shadow(-2px 0px white)
-    drop-shadow(0px -2px white) 
-    drop-shadow(1px 0px black)
-    drop-shadow(-1px 0px black)
-    drop-shadow(0px -1px black)
-    drop-shadow(0px 1px black);
-    font-family: "banda";
-}
-
-.numero-de-telefono {
-    position: absolute;
+.numero-de-telefono{
+    position:absolute;
     width: 49%;
     height: 5%;
-    top: 76%;
-    /*
+    top: 76%;/*
     left: 20%;*/
     color: white;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
-    filter:
-        drop-shadow(-1px 0px black) drop-shadow(0px -1px black) drop-shadow(-1px 0px white) drop-shadow(0px -1px white);
-        align-items: center;
+    filter: 
+    drop-shadow(-1px 0px black)
+    drop-shadow(0px -1px black)
+    drop-shadow(-1px 0px white)
+    drop-shadow(0px -1px white);
 }
 
-.numero-de-telefono>img {
+.numero-de-telefono>img{
     width: 100%;
-    height: 85%;
+    height: 95%;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
 
-.number-tel-1 {
+.number-tel-1{
     font-size: 2em;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.number-tel-2 {
+.number-tel-2{
     font-size: 2em;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-.contenedor-de-localidad {
+.contenedor-de-localidad{
     height: 100%;
     width: 100%;
     position: absolute;
     color: white;
-    top: 0%;
+    top: 90%;
 }
-
-.cuaxocotitla>span {
-    position: absolute;
+.cuaxocotitla>span{/*
+    position: absolute;*/
     font-size: 2.82em;
     color: white;
-    filter:
-        drop-shadow(-1px 0px 0px black) drop-shadow(0px -1px 0px black) drop-shadow(0px 1px 0px black) drop-shadow(1px 0px 0px black) drop-shadow(0px 1px 0px grey) drop-shadow(1px 0px 0px grey);
-    font-weight: 100;
-    /*
+    filter: 
+    drop-shadow(-1px 0px 0px black)
+    drop-shadow(0px -1px 0px black)
+    drop-shadow(0px 1px 0px black)
+    drop-shadow(1px 0px 0px black)
+    drop-shadow(0px 1px 0px grey)
+    drop-shadow(1px 0px 0px grey);
+    font-weight: 100;/*
     background-color: white;
     border: 1px solid red;*/
-}
-
-.C {
+}/*
+.C{
     top: 88%;
     left: 15.59%;
     transform: rotate(29deg);
 }
 
-.U {
+.U{
     top: 89.24%;
     left: 19.85%;
     transform: rotate(25.5deg);
 }
 
-.A {
+.A{
     top: 90.1%;
     left: 23%;
     transform: rotate(23deg);
 }
 
-.X {
+.X{
     top: 90.9%;
     left: 26%;
     transform: rotate(19.75deg);
 }
 
-.O {
+.O{
     top: 91.61%;
     left: 29.35%;
     transform: rotate(17deg);
 }
 
-.OC {
+.OC{
     top: 92.2%;
     left: 32.74%;
     transform: rotate(14deg);
 }
 
-.CO {
+.CO{
     top: 92.65%;
     left: 35.77%;
     transform: rotate(11deg);
 }
 
-.T {
+.T{
     top: 92.97%;
     left: 39.23%;
     transform: rotate(9deg);
 }
 
-.I {
+.I{
     top: 93.17%;
     left: 41.28%;
     transform: rotate(7deg);
 }
 
-.IT {
+.IT{
     top: 93.32%;
     left: 43.4%;
     transform: rotate(5deg);
 }
 
-.L {
+.L{
     top: 93.41%;
     left: 45.5%;
     transform: rotate(3deg);
 }
 
-.LA {
+.LA{
     top: 93.45%;
     left: 47.5%;
 }
 
-.H {
+.H{
     top: 93.22%;
     left: 53%;
     transform: rotate(-5deg);
 }
 
-.HU {
+.HU{
     top: 92.87%;
     left: 58.4%;
     transform: rotate(-8.5deg);
 }
 
-.E {
+.E{
     top: 92.49%;
     left: 62%;
     transform: rotate(-11.5deg);
 }
 
-.J {
+.J{
     top: 92.11%;
     left: 65.3%;
     transform: rotate(-13deg);
 }
 
-.JU {
+.JU{
     top: 91.6%;
     left: 67.5%;
     transform: rotate(-16.5deg);
 }
 
-.UT {
+.UT{
     top: 91%;
     left: 71.2%;
     transform: rotate(-18.8deg);
 }
 
-.TL {
+.TL{
     top: 90.51%;
     left: 73.3%;
     transform: rotate(-21deg);
 }
 
-.TLA {
+.TLA{
     top: 89.81%;
     left: 75.39%;
     transform: rotate(-22.5deg);
 }
 
-.HG {
+.HG{
     top: 87.5%;
     left: 81%;
     transform: rotate(-28.5deg);
 }
-
-.G {
+.G{
     top: 86%;
     left: 85.8%;
     transform: rotate(-32deg);
 }
 
-.GO {
+.GO{
     top: 84.62%;
     left: 89%;
     transform: rotate(-35deg);
-}
+}*/
