@@ -1,15 +1,29 @@
+:root{
+    --ancho_de_pagina: 1200px;
+    --alto_de_pagina: 1551px;
+    --marco_tabla: 5px solid black;
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-size: 2rem;
 }
 
 body{
-    width: 1583px;
-    height: 2046px;
+    width: var(--ancho_de_pagina);
+    height: var(--alto_de_pagina);
     border: red solid 1px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
+}
+
+.fondo{
+    width: var(--ancho_de_pagina);
+    height: var(--alto_de_pagina);
+    background: url(background-02.jpeg) center/cover;
+    opacity: .6;
+    position: absolute;
+    z-index: -1;
+
 }
 
 .papel{
@@ -21,7 +35,8 @@ body{
 
 .encabezado{
     margin-block-start: 2%;
-    margin-block-end: 5%;
+    margin-block-end: 1%;
+    font-size: 2.5em;
 }
 
 /*
@@ -36,42 +51,102 @@ body{
 }
 */
 
+.contenido{
+    margin: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
 
 img{
-    width: 38%;
+    width: 30%;
+    filter: none;
 }
 
-.tabla_de_dinero{
-    margin-block-start: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.table_diner{
+    display: grid;
+    grid-template-columns: 37% 60%;
+    width: 50%;
+    height: auto;
+    margin-block-start: 10%;
 }
 
-th{
-    height: 100px;
+.dvi1{
+    border: var(--marco_tabla);
+    font-size: 2.5em;
+    text-align: center;
+} 
+
+.dvi3{
+    border-right: var(--marco_tabla);
+    border-bottom: var(--marco_tabla);
+    border-left: var(--marco_tabla);
+    font-size: 2.5em;
+    text-align: center;
+} 
+
+.dvi5{
+    border-left: var(--marco_tabla);
+    border-bottom: var(--marco_tabla);
+    border-right: var(--marco_tabla);
+    font-size: 2.5em;
+    text-align: center;
+} 
+
+.dvi2{
+    border-top: var(--marco_tabla);
+    border-right: var(--marco_tabla);
+    border-bottom: var(--marco_tabla);
+    font-size: 2.5em;
+} 
+
+.dvi4{
+    border-right: var(--marco_tabla);
+    border-bottom: var(--marco_tabla);
+    font-size: 2.5em;
+} 
+
+.dvi6{
+    font-size: 2.5em;
+    border-right: var(--marco_tabla);
+    border-bottom: var(--marco_tabla);
 }
 
-.ralla{
-    color: white;
+.caja-firma{
+    width: 80%;
+    margin-block-start: 10%;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    gap: 3%;
+    font-weight: 600;
+}
+
+.nombres{
+    height: 43px;
+    border-bottom: var(--marco_tabla);
 }
 
 .firma{
-    margin-block-start: 70px;
-    width: 100%;
-}
-
-.firm{
-    width: 100%;
+    height: 73px;
+    border-bottom: var(--marco_tabla);
 }
 
 .telefono{
-    width: 100%;
-    margin-block-start: 70px;
+    width: 80%;
+    margin-block-start: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    font-size: 2em;
+    gap: 3%;
 }
-.telefono>span{
-    width: 49%;
-    display: inline-table;
-    text-align: center;
-    font-weight: 900;
+
+.telefono>span>span{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 0 white, 0 1px white, 1px 1px white, -1px 1px white, -1px -1px white;
 }
